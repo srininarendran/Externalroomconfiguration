@@ -1,0 +1,58 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+@keyframes matPreviewFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes matExpandIn {
+  from { opacity: 0; max-height: 48px; }
+  to   { opacity: 1; max-height: 600px; }
+}
+
+@keyframes captureOverlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes captureFrameIn {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.96); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes placementModalIn {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.94); }
+  to   { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+@keyframes scanSlide {
+  0%   { left: -40%; }
+  100% { left: 100%; }
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50%      { opacity: 0.6; }
+}
+
+@keyframes replacedGlow {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.96); filter: drop-shadow(0 0 24px rgba(74,222,128,0.60)); }
+  30%  { opacity: 1; transform: translate(-50%, -50%) scale(1.01); filter: drop-shadow(0 0 28px rgba(74,222,128,0.50)); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1);    filter: none; }
+}
+
+.library-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.43);
+}
